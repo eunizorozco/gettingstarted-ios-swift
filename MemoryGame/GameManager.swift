@@ -14,7 +14,6 @@ class GameManager: NSObject {
     var numOfOpenCards: Int = 0
     var recentlyOpenedCard: Card?
     var maxOpenedCards: Int = 2
-    var maxMatchedCards: Int = 2
     
     var numOfMatchedPairs: Int = 0
     var numOfPairs: Int = 0

@@ -33,11 +33,9 @@ class ViewController: UIViewController {
                 let random = arc4random_uniform(UInt32(deckCards.count - 1))
                 let cardImage = deckCards.remove(at: Int(random))
                 (cardView as? Card)?.cardImage = cardImage
-                
-                let maxMatchedCard = manager.maxMatchedCards
-                manager.maxMatchedCards = maxMatchedCard + 1
             })
         }
+    
         manager.viewController = self
     }
 
